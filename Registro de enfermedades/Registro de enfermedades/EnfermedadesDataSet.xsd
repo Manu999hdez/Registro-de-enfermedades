@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="EnfermedadesDataSet" targetNamespace="http://tempuri.org/EnfermedadesDataSet.xsd" xmlns:mstns="http://tempuri.org/EnfermedadesDataSet.xsd" xmlns="http://tempuri.org/EnfermedadesDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="RegistroEnfermedadesConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="RegistroEnfermedadesConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Registro_de_enfermedades.Properties.Settings.GlobalReference.Default.RegistroEnfermedadesConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ViewEnfermedades-PersonasTableAdapter" GeneratorDataComponentClassName="ViewEnfermedades_PersonasTableAdapter" Name="ViewEnfermedades-Personas" UserDataComponentName="ViewEnfermedades-PersonasTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="RegistroEnfermedadesConnectionString (Settings)" DbObjectName="RegistroEnfermedades.dbo.[ViewEnfermedades-Personas]" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Fecha, Clasificacion, Enfermedad, IdPersona, IdEnfermedad, Sexo, Edad FROM dbo.[ViewEnfermedades-Personas]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Fecha" DataSetColumn="Fecha" />
+              <Mapping SourceColumn="Clasificacion" DataSetColumn="Clasificacion" />
+              <Mapping SourceColumn="Enfermedad" DataSetColumn="Enfermedad" />
+              <Mapping SourceColumn="IdPersona" DataSetColumn="IdPersona" />
+              <Mapping SourceColumn="IdEnfermedad" DataSetColumn="IdEnfermedad" />
+              <Mapping SourceColumn="Sexo" DataSetColumn="Sexo" />
+              <Mapping SourceColumn="Edad" DataSetColumn="Edad" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="EnfermedadesDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="EnfermedadesDataSet" msprop:Generator_UserDSName="EnfermedadesDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ViewEnfermedades-Personas" msprop:Generator_TableClassName="_ViewEnfermedades_PersonasDataTable" msprop:Generator_TableVarName="_tableViewEnfermedades_Personas" msprop:Generator_TablePropName="_ViewEnfermedades_Personas" msprop:Generator_RowDeletingName="_ViewEnfermedades_PersonasRowDeleting" msprop:Generator_RowChangingName="_ViewEnfermedades_PersonasRowChanging" msprop:Generator_RowEvHandlerName="_ViewEnfermedades_PersonasRowChangeEventHandler" msprop:Generator_RowDeletedName="_ViewEnfermedades_PersonasRowDeleted" msprop:Generator_UserTableName="ViewEnfermedades-Personas" msprop:Generator_RowChangedName="_ViewEnfermedades_PersonasRowChanged" msprop:Generator_RowEvArgName="_ViewEnfermedades_PersonasRowChangeEvent" msprop:Generator_RowClassName="_ViewEnfermedades_PersonasRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Fecha" msprop:Generator_ColumnVarNameInTable="columnFecha" msprop:Generator_ColumnPropNameInRow="Fecha" msprop:Generator_ColumnPropNameInTable="FechaColumn" msprop:Generator_UserColumnName="Fecha" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Clasificacion" msprop:Generator_ColumnVarNameInTable="columnClasificacion" msprop:Generator_ColumnPropNameInRow="Clasificacion" msprop:Generator_ColumnPropNameInTable="ClasificacionColumn" msprop:Generator_UserColumnName="Clasificacion" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Enfermedad" msprop:Generator_ColumnVarNameInTable="columnEnfermedad" msprop:Generator_ColumnPropNameInRow="Enfermedad" msprop:Generator_ColumnPropNameInTable="EnfermedadColumn" msprop:Generator_UserColumnName="Enfermedad" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="150" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IdPersona" msprop:Generator_ColumnVarNameInTable="columnIdPersona" msprop:Generator_ColumnPropNameInRow="IdPersona" msprop:Generator_ColumnPropNameInTable="IdPersonaColumn" msprop:Generator_UserColumnName="IdPersona" type="xs:int" />
+              <xs:element name="IdEnfermedad" msprop:Generator_ColumnVarNameInTable="columnIdEnfermedad" msprop:Generator_ColumnPropNameInRow="IdEnfermedad" msprop:Generator_ColumnPropNameInTable="IdEnfermedadColumn" msprop:Generator_UserColumnName="IdEnfermedad" type="xs:int" />
+              <xs:element name="Sexo" msprop:Generator_ColumnVarNameInTable="columnSexo" msprop:Generator_ColumnPropNameInRow="Sexo" msprop:Generator_ColumnPropNameInTable="SexoColumn" msprop:Generator_UserColumnName="Sexo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Edad" msprop:Generator_ColumnVarNameInTable="columnEdad" msprop:Generator_ColumnPropNameInRow="Edad" msprop:Generator_ColumnPropNameInTable="EdadColumn" msprop:Generator_UserColumnName="Edad" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ViewEnfermedades-Personas" />
+      <xs:field xpath="mstns:IdEnfermedad" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
